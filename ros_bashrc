@@ -71,7 +71,7 @@ function ros_menu_env()
 function ros_menu_disable()
 {
     sed -i '/menu_enable/s/true/false/g' ~/ros_menu/config.yaml
-    echo "To enable ros_menu please use ro_menu_enable"
+    echo "To enable ros_menu please use ros_menu_enable"
 }
 
 function ros_menu_enable()
