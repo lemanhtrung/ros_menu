@@ -18,7 +18,7 @@ Neuron Startup Menu offers these features:
 * Ubuntu 18.04
   - ROS 1 melodic / ROS 2 dashing
 * Ubuntu 20.04
-  - ROS 1 noetic / ROS 2 foxy
+  - ROS 1 noetic / ROS 2 galactic
 * Ubuntu 22.04
   - ROS 2 humble
   
@@ -37,7 +37,7 @@ sudo apt install -y git curl
 
     ```bash
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/Adlink-ROS/ros_menu/master/scripts/setup.sh)"
-    # or
+    # or added galactic/neotic
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/lemanhtrung/ros_menu/master/scripts/setup.sh)"
     ```
   
@@ -51,6 +51,8 @@ sudo apt install -y git curl
     reboot
     # After reboot
     sh -c "MENU_CONFIG=ros_menu_20.04_container.yaml USE_CONTAINER=True $(curl -fsSL https://raw.githubusercontent.com/Adlink-ROS/ros_menu/main/scripts/setup.sh)"
+    # or 
+    sh -c "MENU_CONFIG=ros_menu_20.04_container.yaml USE_CONTAINER=True $(curl -fsSL https://raw.githubusercontent.com/lemanhtrung/ros_menu/master/scripts/setup.sh)"
     ```
 
 * (Optional) you can add variables while downloading ros_menu.
@@ -60,6 +62,11 @@ sudo apt install -y git curl
 sh -c "MENU_VERSION=<Your Version> $(curl -fsSL https://raw.githubusercontent.com/Adlink-ROS/ros_menu/main/scripts/setup.sh)"
 # Select which config you want.
 sh -c "MENU_CONFIG=<Config Name> $(curl -fsSL https://raw.githubusercontent.com/Adlink-ROS/ros_menu/main/scripts/setup.sh)"
+# or
+# Select which version you want.
+sh -c "MENU_VERSION=<Your Version> $(curl -fsSL https://raw.githubusercontent.com/lemanhtrung/ros_menu/master/scripts/setup.sh)"
+# Select which config you want.
+sh -c "MENU_CONFIG=<Config Name> $(curl -fsSL https://raw.githubusercontent.com/lemanhtrung/ros_menu/master/scripts/setup.sh)"
 ```
 
 # Usage
@@ -73,7 +80,7 @@ sh -c "MENU_CONFIG=<Config Name> $(curl -fsSL https://raw.githubusercontent.com/
 ******************************************************
 0) Do nothing
 1) ROS 1 noetic 
-2) ROS 2 foxy 
+2) ROS 2 galactic 
 3) ROS2/ROS1_bridge 
 h) Help
 Please choose an option:
@@ -86,7 +93,7 @@ Please choose an option:
     - `ROS noetic`:
         * Sets up the ROS 1 environment.
         * Sets the ROS_IP and ROS_MASTER_URI, which is your host IP.
-    - `ROS 2 foxy`:
+    - `ROS 2 galactic`:
         * Sets up the ROS 2 environment.
         * Loads DDS settings and select the DDS you want to use.
     - `ROS2/ROS1_bridge`:
@@ -167,4 +174,7 @@ ros_menu_enable
 
 If you find any problems or have any suggestions, feel free to open issues on GitHub.
 
-Issue URL: https://github.com/Adlink-ROS/ros_menu/issues
+Issue URL: https://github.com/lemanhtrung/ros_menu/issues
+
+# Modified to add galactic/neotic, Original from AD-link
+Visit here: https://github.com/Adlink-ROS/ros_menu 
