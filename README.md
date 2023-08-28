@@ -37,6 +37,8 @@ sudo apt install -y git curl
 
     ```bash
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/Adlink-ROS/ros_menu/master/scripts/setup.sh)"
+    # or
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/lemanhtrung/ros_menu/master/scripts/setup.sh)"
     ```
   
   - container
